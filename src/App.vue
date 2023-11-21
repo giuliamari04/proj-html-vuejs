@@ -13,6 +13,8 @@
 </template>
 
 <script>
+import axios from "axios";
+import { store } from "./components/data/store.js";
 import CardComponent from "./components/CardComponent.vue";
 import NavBarComponent from "./components/NavBarComponent.vue";
 import JumbotronComponent from "./components/JumbotronComponent.vue";
@@ -31,7 +33,7 @@ export default {
   },
   data() {
     return {
-
+      store,
     }
   },
   methods: {

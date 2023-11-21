@@ -135,10 +135,13 @@ Se tutto funziona pusho su github
 ```sh
 pastries = [
     {
-        name:'String',
-        type:'String',
-        price:Number,
-    }
+        name:"String",
+        catcategory:"String",
+        type:"String",
+        firstPrice:Number,
+        secondPrice:Number,
+        discount:Boolean,
+       },
 ]
 
 ```
