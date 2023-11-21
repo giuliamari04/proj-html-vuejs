@@ -11,7 +11,7 @@
 
 <script>
     export default {
-        Name:"MainComponent",
+        name:"MainComponent",
     }
 </script>
 

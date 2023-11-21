@@ -159,4 +159,4 @@ navbarWords =
 ## Milestone 2
 
 - crea tutto l'header con la navbar e il jumbotron con la grafica e hover
--inizia a implementare la struttura della prima section
+- inizia a implementare la struttura della prima section

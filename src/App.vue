@@ -1,6 +1,6 @@
 <template>
   <header>
-    header
+    <div class="text-center py-3 my-bg-light-pink"> Free International Shipping - 10% OFF SITE</div>
     <NavBarComponent/>
     <JumbotronComponent/>
   </header>
@@ -13,7 +13,6 @@
 </template>
 
 <script>
-import axios from "axios";
 import { store } from "./components/data/store.js";
 import CardComponent from "./components/CardComponent.vue";
 import NavBarComponent from "./components/NavBarComponent.vue";
@@ -37,11 +36,26 @@ export default {
     }
   },
   methods: {
-    
+    getDolci() {
+      const pastryNames = store.pastries.map(pastry => pastry.name);
+      console.log(pastryNames);
+      console.log(store.pastries);
+    },
   },
+  mounted() {
+    // Call the getDolci method when the component is mounted
+    this.getDolci();
+  },
+
 }
 </script>
 
 <style lang="scss" scoped>
-
+@use "./assets/styles/partials/variables" as *;
+.my-bg-light-pink{
+  background-color: $colorLightPink;
+}
+main{
+  height: 600vh;
+}
 </style>

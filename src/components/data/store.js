@@ -3,6 +3,7 @@ import {reactive} from "vue";
 export const store = reactive({
     pastries:[
         {
+        id:1,
         name:"Choco Chip Cookies",
         catcategory:"pastries",
         type:"cookies",
@@ -11,6 +12,7 @@ export const store = reactive({
         discount:false,
        },
        {
+        id:2,
         name:"Strawberry Jam Cookies",
         catcategory:"pastries",
         type:"cookies",
@@ -19,6 +21,7 @@ export const store = reactive({
         discount:false,
        },
        {
+        id:3,
         name:"Cookies with ice cream",
         catcategory:"pastries",
         type:"cookies",
@@ -27,6 +30,7 @@ export const store = reactive({
         discount:false,
        },
        {
+        id:4,
         name:"Homemade Bread",
         catcategory:"pastries",
         type:"breads",
@@ -35,6 +39,7 @@ export const store = reactive({
         discount:false,
        },
        {
+        id:5,
         name:"Blackberry Stuffed Bread",
         catcategory:"pastries",
         type:"breads",
@@ -43,6 +48,7 @@ export const store = reactive({
         discount:false,
        },
        {
+        id:6,
         name:"Cake with Cherry Topping",
         catcategory:"pastries",
         type:"cakes",
@@ -51,6 +57,7 @@ export const store = reactive({
         discount:false,
        },
        {
+        id:7,
         name:"Chocolate Cupcake",
         catcategory:"pastries",
         type:"cakes",
@@ -59,6 +66,7 @@ export const store = reactive({
         discount:false,
        },
        {
+        id:8,
         name:"Cupcake Surprise",
         catcategory:"pastries",
         type:"cakes",
@@ -67,6 +75,7 @@ export const store = reactive({
         discount:false,
        },
        {
+        id:9,
         name:"Glazed Bread with Fruits",
         catcategory:"pastries",
         type:"breads",
@@ -75,6 +84,7 @@ export const store = reactive({
         discount:true,
        },
        {
+        id:10,
         name:"perfect macarons",
         catcategory:"pastries",
         type:"cookies",
@@ -83,6 +93,7 @@ export const store = reactive({
         discount:false,
        },
        {
+        id:11,
         name:"Premium bread",
         catcategory:"pastries",
         type:"breads",
@@ -91,6 +102,7 @@ export const store = reactive({
         discount:false,
        },
        {
+         id:12,
         name:"Strawberry Donut",
         catcategory:"pastries",
         type:"cakes",
