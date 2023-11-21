@@ -18,7 +18,7 @@
 
 <style lang="scss" scoped>
 .bg-jumbo{
-    background-image: url(../../public/image/hero-header-bakery.jpg);
+    background-image: url(../image/hero-header-bakery.jpg);
     background-size: 140%;
     background-position:50% 100%;
     margin-top: -135px;

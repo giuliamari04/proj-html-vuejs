@@ -10,6 +10,7 @@ export const store = reactive({
         firstPrice:18.00,
         secondPrice:32.00,
         discount:false,
+        img:"choco-chip-cookies-",
        },
        {
         id:2,
@@ -19,6 +20,7 @@ export const store = reactive({
         firstPrice:36.00,
         secondPrice:60.00,
         discount:false,
+        img:"strawberry-jam-cookies-",
        },
        {
         id:3,
@@ -28,6 +30,7 @@ export const store = reactive({
         firstPrice:18.00,
         secondPrice:34.00,
         discount:false,
+        img:"cookies-with-ice-cream-",
        },
        {
         id:4,
@@ -37,6 +40,7 @@ export const store = reactive({
         firstPrice:26.00,
         secondPrice:68.00,
         discount:false,
+        img:"home-bread-",
        },
        {
         id:5,
@@ -46,6 +50,7 @@ export const store = reactive({
         firstPrice:22.00,
         secondPrice:46.00,
         discount:false,
+        img:"",
        },
        {
         id:6,
@@ -55,6 +60,7 @@ export const store = reactive({
         firstPrice:99.00,
         secondPrice:"",
         discount:false,
+        img:"cake-with-cherry-topping-",
        },
        {
         id:7,
@@ -64,6 +70,7 @@ export const store = reactive({
         firstPrice:26.00,
         secondPrice:68.00,
         discount:false,
+        img:"chocolate-cupcake-",
        },
        {
         id:8,
@@ -73,6 +80,7 @@ export const store = reactive({
         firstPrice:26.00,
         secondPrice:68.00,
         discount:false,
+        img:"cupcake-surprise-",
        },
        {
         id:9,
@@ -82,6 +90,7 @@ export const store = reactive({
         firstPrice:36.00,
         secondPrice:24.00,
         discount:true,
+        img:"glazed-bread-with-fruits-",
        },
        {
         id:10,
@@ -91,6 +100,7 @@ export const store = reactive({
         firstPrice:32.00,
         secondPrice:56.00,
         discount:false,
+        img:"perfect-macarons-",
        },
        {
         id:11,
@@ -100,6 +110,7 @@ export const store = reactive({
         firstPrice:32.00,
         secondPrice:68.00,
         discount:false,
+        img:"premium-bread-",
        },
        {
          id:12,
@@ -109,6 +120,7 @@ export const store = reactive({
         firstPrice:24.00,
         secondPrice:48.00,
         discount:false,
+        img:"strawberry-donut-",
        },
        
      
