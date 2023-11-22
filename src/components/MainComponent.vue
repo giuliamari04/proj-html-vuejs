@@ -268,7 +268,14 @@
         </div>
     </div>
   </section>
-  <section id="shop">7</section>
+  <section id="shop" class="bg-section7">
+    <div class="mx-5 d-flex flex-column justify-content-center h-100 ">
+        <h3 class="subtitle text-light px-5">TRY OUR SEASONAL PRODUCTS</h3>
+        <h1 class="title text-light py-3 px-5">Order for pick-up or delivery to your home</h1>
+        <div class="pt-5 px-5"> <button class="btn btn-white px-4 py-3">Shop Now</button></div>
+       
+    </div>
+  </section>
 </template>
 
 <script>
@@ -525,7 +532,6 @@ li {
 }
 .col-3{
     height: 400px;
-    background-color: red;
 }
 .social-1{
         background-image: url(image/social-1.jpg);
@@ -547,6 +553,12 @@ li {
         background-image: url(image/social-6.jpg);
     }
 
+    .bg-section7{
+        background-image: url(image/call-to-action-bg.jpg);
+        background-size:cover;
+        background-position: center;
+        height: 70vh;
+    }
     .pr-5{
         padding-right: 60px;
     }
