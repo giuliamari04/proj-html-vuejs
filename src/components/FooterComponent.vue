@@ -42,11 +42,25 @@
 </script>
 
 <style lang="scss" scoped>
+ @use "../assets/styles/partials/variables" as *;
 li{
     list-style: none;
     text-transform: capitalize;
+    cursor: pointer;
+    color: $colorPurple;
+}
+span{
+    color: $colorPurple;
+    font-size: 0.9em;
+}
+
+li:hover{
+    color: rgb(54, 54, 54);
 }
 ul{
     width: 90%;
+}
+.fa-brands{
+    cursor: pointer;
 }
 </style>
