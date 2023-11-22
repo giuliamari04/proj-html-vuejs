@@ -160,3 +160,13 @@ navbarWords =
 
 - crea tutto l'header con la navbar e il jumbotron con la grafica e hover
 - inizia a implementare la struttura della prima section
+
+## Milestone 3
+
+- crea la seconda section creando una row con due colonne 
+- dai hover alle immagini
+
+## Milestone 4 
+
+- crea la terza section 
+- dividi in due colonne la perte di testo e lo slider
