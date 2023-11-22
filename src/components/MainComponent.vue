@@ -86,7 +86,7 @@
   </section>
   <section id="find-products" class="p-5 m-5">
     <div class="row">
-      <div class="col-3">
+      <div class="col-4">
         <h1 class="title">Find a freshly baked product perfect for you</h1>
         <p class="py-3">
           Integer a nibh vitae ex porttitor rutrum et ut velit. Etiam ac felis
@@ -199,7 +199,7 @@
     <div class="row">
       <div class="col m-0 p-0 overflow-hidden ">
         <div class="card border-0  overflow-hidden rounded-0 bg-light-gray " >
-            <div class="img-newyork"></div>
+            <div class="img-newyork img-zoom"></div>
           <div class="card-body overflow-hidden ">
             <div class="card-text">
              <h1 class="title text-center fs-2 py-3">New York</h1>
@@ -222,7 +222,7 @@
       </div>
       <div class="col m-0 p-0 overflow-hidden ">
         <div class="card border-0  overflow-hidden rounded-0 my-bg-light-pink  " >
-            <div class="img-london"></div>
+            <div class="img-london img-zoom"></div>
           <div class="card-body overflow-hidden ">
             <div class="card-text ">
              <h1 class="title text-center fs-2 py-3">London</h1>
@@ -245,7 +245,29 @@
       </div>
     </div>
   </section>
-  <section id="contacts">6</section>
+  <section id="contacts" class="p-5 m-5">
+    <div class="row py-4 gap-3 d-flex flex-nowrap pr-5">
+        <div class="col-3 overflow-hidden social-1 img-zoom2 "> 
+        </div>
+        <div class="col-6 my-bg-light-pink d-flex flex-column justify-content-center align-items-center mx-3 ">
+           <h3 class="subtitle">MADE FOR SHARING</h3>
+           <h1 class="title py-3">Let's stay in touch</h1>
+           <button class="btn btn-white px-4 py-2"><i class="fa-brands fa-instagram px-1"></i>Follow Us</button>
+        </div>
+        <div class="col-3 overflow-hidden social-2 img-zoom2">
+        </div>
+    </div>
+    <div class="row pr-5 gap-4 d-flex flex-nowrap">
+        <div class="col-3 overflow-hidden social-3 img-zoom2">
+        </div>
+        <div class="col-3 overflow-hidden social-4 img-zoom2">
+        </div>
+        <div class="col-3 overflow-hidden social-5 img-zoom2">
+        </div>
+        <div class="col-3 overflow-hidden social-6 img-zoom2">
+        </div>
+    </div>
+  </section>
   <section id="shop">7</section>
 </template>
 
@@ -471,34 +493,61 @@ li {
   left: 0;
   right: 0;
 }
-.card-img-top{
-    transition: 0.5s;
-}
-.card-img-top:hover{
-    transform: scale(1.2);
-}
 .img-newyork {
-  background-image: url(image/new-york-bk-600x397.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 100%;
-  height: 430px;
-  transition: background-size 2s ease; /* Aggiungi questa riga per la transizione */
+  background-image: url(image/new-york-bk-600x397.jpg); 
 }
 
-.img-newyork:hover {
-  background-size: 120%;
-}
 .img-london {
   background-image: url(image/london-bk-600x397.jpg);
+}
+
+
+.img-zoom {
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100%;
   height: 430px;
-  transition: background-size 2s ease; /* Aggiungi questa riga per la transizione */
+  transition: background-size 2s ease;
 }
 
-.img-london:hover {
+.img-zoom:hover {
   background-size: 120%;
 }
+
+.img-zoom2 {
+  background-position: 10%;
+  background-repeat: no-repeat;
+  background-size: 140%;
+  transition: background-size 1s ease;
+}
+.img-zoom2:hover {
+  background-size: 150%;
+}
+.col-3{
+    height: 400px;
+    background-color: red;
+}
+.social-1{
+        background-image: url(image/social-1.jpg);
+    }
+
+    .social-2{
+        background-image: url(image/social-2.jpg);
+    }
+    .social-3{
+        background-image: url(image/social-3.jpg);
+    }
+    .social-4{
+        background-image: url(image/social-4.jpg);
+    }
+    .social-5{
+        background-image: url(image/social-5.jpg);
+    }
+    .social-6{
+        background-image: url(image/social-6.jpg);
+    }
+
+    .pr-5{
+        padding-right: 60px;
+    }
 </style>

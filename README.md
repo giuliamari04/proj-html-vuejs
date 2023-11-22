@@ -178,5 +178,10 @@ navbarWords =
 ## Milestone 6
 
 - crea quinta sezione 
--crea due schede con immagini delle bakery di londra e newyork e inserisci riquadro sotto rispettive immagini con
+- crea due schede con immagini delle bakery di londra e newyork e inserisci riquadro sotto rispettive immagini con
 i dettaggli seguenti: numero di tel. , orari di apertura, bottone per la mappa.
+
+## Milestone 7
+
+- crea sesta sezione
+- crea 6 card con delle immagini con hover zoom e nella prima riga inserisci un riquadro con il contatto instagram 
