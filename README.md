@@ -170,3 +170,7 @@ navbarWords =
 
 - crea la terza section 
 - dividi in due colonne la perte di testo e lo slider
+
+## Milestone 5
+- crea la quarta sezione dividendo in 3 row con le necessarie col 
+- inserisci il testo per ogni col 
