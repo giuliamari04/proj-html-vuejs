@@ -185,3 +185,12 @@ i dettaggli seguenti: numero di tel. , orari di apertura, bottone per la mappa.
 
 - crea sesta sezione
 - crea 6 card con delle immagini con hover zoom e nella prima riga inserisci un riquadro con il contatto instagram 
+
+## Milestone 8 
+- crea la settina section 
+- crea uno spazio per fare acquisti sul negozio, mettendo uno sfondo a tutto schermo con un bottone al suo in terno che porta a un negozio
+
+## milestone 9
+- crea il footer dividendolo in due sezioni 
+- in una sezione c'è un menù come quello della navbar 
+- nell'altra sezione c'è un input per inserire la email e iscriversi
