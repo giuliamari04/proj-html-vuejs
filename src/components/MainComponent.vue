@@ -149,14 +149,13 @@
           </div>
           <div class="mt-auto p-4">
             <h3 class="subtitle fw-light">SWEET & DELICIOUS</h3>
-          <p>
-            Cras consequat lectus vestibulum tortor pulvinar, quis euismod nisl
-            varius. Ut eu laoreet ex. Aliquam erat volutpat. Nullam quis
-            sagittis nibh. Morbi consectetur ultricies ante ac congue. Donec
-            lorem erat, finibus in velit placerat, rutrum augue.
-          </p>
+            <p>
+              Cras consequat lectus vestibulum tortor pulvinar, quis euismod
+              nisl varius. Ut eu laoreet ex. Aliquam erat volutpat. Nullam quis
+              sagittis nibh. Morbi consectetur ultricies ante ac congue. Donec
+              lorem erat, finibus in velit placerat, rutrum augue.
+            </p>
           </div>
-          
         </div>
       </div>
       <div class="col px-5 bg-light-gray mx-3 py-4">
@@ -192,7 +191,60 @@
       </div>
     </div>
   </section>
-  <section id="locations">5</section>
+  <section id="locations" class="p-5 m-5">
+    <div class="text-center pb-5">
+      <h3 class="subtitle">locations</h3>
+      <h1 class="title">Visit our Bakeries</h1>
+    </div>
+    <div class="row">
+      <div class="col m-0 p-0 overflow-hidden ">
+        <div class="card border-0  overflow-hidden rounded-0 bg-light-gray " >
+            <div class="img-newyork"></div>
+          <div class="card-body overflow-hidden ">
+            <div class="card-text">
+             <h1 class="title text-center fs-2 py-3">New York</h1>
+             <div class="row">
+                <div class="col text-center">
+                    <h3 class="subtitle">CALL US</h3>
+                    <h3 class="fs-6 fw-light ">1.800.458.556</h3>
+                </div>
+                <div class="col text-center">
+                    <h3 class="subtitle">OPEN ALL WEEK</h3>
+                    <h3 class="fs-6 fw-light ">9:00 AM – 6:00 PM</h3>
+                </div>
+                <div class="col text-center ">
+                    <button class="btn btn-white">View Map</button>
+                </div>
+             </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col m-0 p-0 overflow-hidden ">
+        <div class="card border-0  overflow-hidden rounded-0 my-bg-light-pink  " >
+            <div class="img-london"></div>
+          <div class="card-body overflow-hidden ">
+            <div class="card-text ">
+             <h1 class="title text-center fs-2 py-3">London</h1>
+             <div class="row">
+                <div class="col text-center">
+                    <h3 class="subtitle">CALL US</h3>
+                    <h3 class="fs-6 fw-light ">1.800.458.556</h3>
+                </div>
+                <div class="col text-center">
+                    <h3 class="subtitle">OPEN ALL WEEK</h3>
+                    <h3 class="fs-6 fw-light ">9:00 AM – 6:00 PM</h3>
+                </div>
+                <div class="col text-center ">
+                    <button class="btn btn-white">View Map</button>
+                </div>
+             </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
   <section id="contacts">6</section>
   <section id="shop">7</section>
 </template>
@@ -412,13 +464,41 @@ li {
   right: 2%;
 }
 
-.bg-light-gray{
-    background-color: $colorGray;
-}
+
 .z-1 {
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
+}
+.card-img-top{
+    transition: 0.5s;
+}
+.card-img-top:hover{
+    transform: scale(1.2);
+}
+.img-newyork {
+  background-image: url(image/new-york-bk-600x397.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 430px;
+  transition: background-size 2s ease; /* Aggiungi questa riga per la transizione */
+}
+
+.img-newyork:hover {
+  background-size: 120%;
+}
+.img-london {
+  background-image: url(image/london-bk-600x397.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 430px;
+  transition: background-size 2s ease; /* Aggiungi questa riga per la transizione */
+}
+
+.img-london:hover {
+  background-size: 120%;
 }
 </style>

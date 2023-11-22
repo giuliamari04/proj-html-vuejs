@@ -52,9 +52,7 @@ export default {
 
 <style lang="scss" scoped>
 @use "./assets/styles/partials/variables" as *;
-.my-bg-light-pink{
-  background-color: $colorLightPink;
-}
+
 main{
   height: 600vh;
 }

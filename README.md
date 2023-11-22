@@ -174,3 +174,9 @@ navbarWords =
 ## Milestone 5
 - crea la quarta sezione dividendo in 3 row con le necessarie col 
 - inserisci il testo per ogni col 
+
+## Milestone 6
+
+- crea quinta sezione 
+-crea due schede con immagini delle bakery di londra e newyork e inserisci riquadro sotto rispettive immagini con
+i dettaggli seguenti: numero di tel. , orari di apertura, bottone per la mappa.
