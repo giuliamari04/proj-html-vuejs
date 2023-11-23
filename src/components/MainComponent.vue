@@ -235,14 +235,14 @@
           <div class="card-body overflow-hidden">
             <div class="card-text">
               <h1 class="title text-center fs-2 py-3">New York</h1>
-              <div class="row">
-                <div class="col text-center">
-                  <h3 class="subtitle">CALL US</h3>
-                  <h3 class="fs-6 fw-light">1.800.458.556</h3>
+              <div class="row ">
+                <div class="col text-center ">
+                  <h3 class="subtitle text-purple">CALL US</h3>
+                  <h3 class="fs-6 fw-light text-purple">1.800.458.556</h3>
                 </div>
                 <div class="col text-center">
-                  <h3 class="subtitle">OPEN ALL WEEK</h3>
-                  <h3 class="fs-6 fw-light">9:00 AM – 6:00 PM</h3>
+                  <h3 class="subtitle text-purple">OPEN ALL WEEK</h3>
+                  <h3 class="fs-6 fw-light text-purple">9:00 AM – 6:00 PM</h3>
                 </div>
                 <div class="col text-center">
                   <button class="btn btn-white">View Map</button>
@@ -260,12 +260,12 @@
               <h1 class="title text-center fs-2 py-3">London</h1>
               <div class="row">
                 <div class="col text-center">
-                  <h3 class="subtitle">CALL US</h3>
-                  <h3 class="fs-6 fw-light">1.800.458.556</h3>
+                  <h3 class="subtitle text-purple">CALL US</h3>
+                  <h3 class="fs-6 fw-light text-purple">1.800.458.556</h3>
                 </div>
                 <div class="col text-center">
-                  <h3 class="subtitle">OPEN ALL WEEK</h3>
-                  <h3 class="fs-6 fw-light">9:00 AM – 6:00 PM</h3>
+                  <h3 class="subtitle text-purple">OPEN ALL WEEK</h3>
+                  <h3 class="fs-6 fw-light text-purple">9:00 AM – 6:00 PM</h3>
                 </div>
                 <div class="col text-center">
                   <button class="btn btn-white">View Map</button>
