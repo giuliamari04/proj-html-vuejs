@@ -5,7 +5,6 @@
                 <h3 class="title">{{ name }}</h3>
                 <h5 class="fs-6 fw-light ">{{ category }}, {{ type }}</h5>
                 <h5>${{ firstPrice }}.00 - ${{ secondPrice }}.00</h5>
-                
               </div>
     </div>
 </template>

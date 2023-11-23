@@ -69,11 +69,7 @@ export default {
     }
   },
   methods: {
-    getDolci() {
-      const pastryNames = store.pastries.map(pastry => pastry.name);
-      console.log(pastryNames);
-      console.log(store.pastries);
-    },
+    
     scrollToTop() {
       window.scrollTo({
         top: 0,
@@ -81,10 +77,7 @@ export default {
       });
     },
   },
-  mounted() {
-    // Call the getDolci method when the component is mounted
-    this.getDolci();
-  },
+  
 
 }
 </script>

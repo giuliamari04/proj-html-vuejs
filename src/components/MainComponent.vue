@@ -85,8 +85,8 @@
     </div>
   </section>
   <section id="find-products" class="p-5 m-5">
-    <div class="row">
-      <div class="col-4">
+    <div class="row d-flex flex-row  flex-nowrap ">
+      <div class="col-3">
         <h1 class="title">Find a freshly baked product perfect for you</h1>
         <p class="py-3">
           Integer a nibh vitae ex porttitor rutrum et ut velit. Etiam ac felis
@@ -94,22 +94,54 @@
         </p>
         <button class="btn btn-purple px-4 py-2">Shop All Products</button>
       </div>
-      <div class="col bg-black">
-        <div class="slider-container">
-          <!-- <Carousel :perPage="4" :paginationEnabled="false">
-            <Slide v-for="(pastry, index) in store.pastry" :key="index">
-              <Contenuto di ogni singola slide 
-              <div class="card" >
-                <img :src="'/image/' + pastry.img + '400x510.jpg'" class="card-img-top" alt="img" />
-                <div class="card-body">
-                  <p class="card-text">
-                   {{ pastry.catcategory }}
-                  </p>
-                </div>
-              </div>
+      <div class="col">
+        <div class="container ">
+          <div class="slider-wrapper2 d-flex align-items-center overflow-hidden">
+            <button
+              id="prev-slide2"
+              class="slide-button btn-purple p-3 material-symbols-rounded position-absolute btn-left2"
+              @click="slide2(-2)"
+            >
+              <i class="fa-solid fa-chevron-right fa-rotate-180"></i>
+            </button>
+            <ul
+              class="image-list d-flex p-0 m-0"
+              :style="{ transform: `translateX(${traslateX2}px)` }"
+            >
+              <li
+                v-for="(pastries, index) in store.pastries"
+                :key="index"
+                class="px-2"
+              >
+                <div class="card-container">
+                  <img
+                    :src="'/image/' + pastries.img + '200x255.jpg'"
+                    alt="immagine"
+                    class="image-item"
+                  />
+                  <div
+                    class="square-purple2 d-flex flex-column justify-content-center align-items-center align-content-center"
+                  >
+                    <h3 class="subtitle"><a href="#" class="hover-underline">SELECT OPTIONS</a>/ <a href="#" class="hover-underline">QUICK VIEW</a> </h3>
+                  </div>
+                  <div class="card-body text-center w-100">
+                    <h1 class="title fs-4">{{ pastries.name }}</h1> 
 
-            </Slide>
-          </Carousel> -->
+                    <h5 v-if="pastries.secondPrice !== '' && pastries.discount !== true" class="sibtitle fs-6">${{ pastries.firstPrice }}.00 - ${{ pastries.secondPrice }}.00</h5>
+                    <h5 v-if="pastries.secondPrice !== '' && pastries.discount === true" class="sibtitle fs-6"><span class="text-crossed">${{ pastries.firstPrice }}.00 </span>- ${{ pastries.secondPrice }}.00</h5>
+                    <h5 v-if="pastries.secondPrice === ''" class="sibtitle fs-6">${{ pastries.firstPrice }}.00</h5>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <button
+              id="next-slide2"
+              class="slide-button btn-purple p-3 material-symbols-rounded position-absolute btn-right2"
+              @click="slide2(-2)"
+            >
+              <i class="fa-solid fa-chevron-right"></i>
+            </button>
+          </div>
         </div>
       </div>
     </div>
@@ -197,48 +229,48 @@
       <h1 class="title">Visit our Bakeries</h1>
     </div>
     <div class="row">
-      <div class="col m-0 p-0 overflow-hidden ">
-        <div class="card border-0  overflow-hidden rounded-0 bg-light-gray " >
-            <div class="img-newyork img-zoom"></div>
-          <div class="card-body overflow-hidden ">
+      <div class="col m-0 p-0 overflow-hidden">
+        <div class="card border-0 overflow-hidden rounded-0 bg-light-gray">
+          <div class="img-newyork img-zoom"></div>
+          <div class="card-body overflow-hidden">
             <div class="card-text">
-             <h1 class="title text-center fs-2 py-3">New York</h1>
-             <div class="row">
+              <h1 class="title text-center fs-2 py-3">New York</h1>
+              <div class="row">
                 <div class="col text-center">
-                    <h3 class="subtitle">CALL US</h3>
-                    <h3 class="fs-6 fw-light ">1.800.458.556</h3>
+                  <h3 class="subtitle">CALL US</h3>
+                  <h3 class="fs-6 fw-light">1.800.458.556</h3>
                 </div>
                 <div class="col text-center">
-                    <h3 class="subtitle">OPEN ALL WEEK</h3>
-                    <h3 class="fs-6 fw-light ">9:00 AM – 6:00 PM</h3>
+                  <h3 class="subtitle">OPEN ALL WEEK</h3>
+                  <h3 class="fs-6 fw-light">9:00 AM – 6:00 PM</h3>
                 </div>
-                <div class="col text-center ">
-                    <button class="btn btn-white">View Map</button>
+                <div class="col text-center">
+                  <button class="btn btn-white">View Map</button>
                 </div>
-             </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="col m-0 p-0 overflow-hidden ">
-        <div class="card border-0  overflow-hidden rounded-0 my-bg-light-pink  " >
-            <div class="img-london img-zoom"></div>
-          <div class="card-body overflow-hidden ">
-            <div class="card-text ">
-             <h1 class="title text-center fs-2 py-3">London</h1>
-             <div class="row">
+      <div class="col m-0 p-0 overflow-hidden">
+        <div class="card border-0 overflow-hidden rounded-0 my-bg-light-pink">
+          <div class="img-london img-zoom"></div>
+          <div class="card-body overflow-hidden">
+            <div class="card-text">
+              <h1 class="title text-center fs-2 py-3">London</h1>
+              <div class="row">
                 <div class="col text-center">
-                    <h3 class="subtitle">CALL US</h3>
-                    <h3 class="fs-6 fw-light ">1.800.458.556</h3>
+                  <h3 class="subtitle">CALL US</h3>
+                  <h3 class="fs-6 fw-light">1.800.458.556</h3>
                 </div>
                 <div class="col text-center">
-                    <h3 class="subtitle">OPEN ALL WEEK</h3>
-                    <h3 class="fs-6 fw-light ">9:00 AM – 6:00 PM</h3>
+                  <h3 class="subtitle">OPEN ALL WEEK</h3>
+                  <h3 class="fs-6 fw-light">9:00 AM – 6:00 PM</h3>
                 </div>
-                <div class="col text-center ">
-                    <button class="btn btn-white">View Map</button>
+                <div class="col text-center">
+                  <button class="btn btn-white">View Map</button>
                 </div>
-             </div>
+              </div>
             </div>
           </div>
         </div>
@@ -247,33 +279,34 @@
   </section>
   <section id="contacts" class="p-5 m-5">
     <div class="row py-4 gap-3 d-flex flex-nowrap pr-5">
-        <div class="col-3 overflow-hidden social-1 img-zoom2 "> 
-        </div>
-        <div class="col-6 my-bg-light-pink d-flex flex-column justify-content-center align-items-center mx-3 ">
-           <h3 class="subtitle">MADE FOR SHARING</h3>
-           <h1 class="title py-3">Let's stay in touch</h1>
-           <button class="btn btn-white px-4 py-2"><i class="fa-brands fa-instagram px-1"></i>Follow Us</button>
-        </div>
-        <div class="col-3 overflow-hidden social-2 img-zoom2">
-        </div>
+      <div class="col-3 overflow-hidden social-1 img-zoom2"></div>
+      <div
+        class="col-6 my-bg-light-pink d-flex flex-column justify-content-center align-items-center mx-3"
+      >
+        <h3 class="subtitle text-purple">MADE FOR SHARING</h3>
+        <h1 class="title py-3 text-pulse"  ref="animatedText">Let's stay in touch</h1>
+        <button class="btn btn-purple px-4 py-2">
+          <i class="fa-brands fa-instagram px-1"></i>Follow Us
+        </button>
+      </div>
+      <div class="col-3 overflow-hidden social-2 img-zoom2"></div>
     </div>
     <div class="row pr-5 gap-4 d-flex flex-nowrap">
-        <div class="col-3 overflow-hidden social-3 img-zoom2">
-        </div>
-        <div class="col-3 overflow-hidden social-4 img-zoom2">
-        </div>
-        <div class="col-3 overflow-hidden social-5 img-zoom2">
-        </div>
-        <div class="col-3 overflow-hidden social-6 img-zoom2">
-        </div>
+      <div class="col-3 overflow-hidden social-3 img-zoom2"></div>
+      <div class="col-3 overflow-hidden social-4 img-zoom2"></div>
+      <div class="col-3 overflow-hidden social-5 img-zoom2"></div>
+      <div class="col-3 overflow-hidden social-6 img-zoom2"></div>
     </div>
   </section>
   <section id="shop" class="bg-section7">
-    <div class="mx-5 d-flex flex-column justify-content-center h-100 ">
-        <h3 class="subtitle text-light px-5">TRY OUR SEASONAL PRODUCTS</h3>
-        <h1 class="title text-light py-3 px-5">Order for pick-up or delivery to your home</h1>
-        <div class="pt-5 px-5"> <button class="btn btn-white px-4 py-3">Shop Now</button></div>
-       
+    <div class="mx-5 d-flex flex-column justify-content-center h-100">
+      <h3 class="subtitle text-light px-5">TRY OUR SEASONAL PRODUCTS</h3>
+      <h1 class="title text-light py-3 px-5">
+        Order for pick-up or delivery to your home
+      </h1>
+      <div class="pt-5 px-5">
+        <button class="btn btn-white px-4 py-3">Shop Now</button>
+      </div>
     </div>
   </section>
 </template>
@@ -281,29 +314,41 @@
 <script>
 import { store } from "../components/data/store.js";
 import CardComponent from "./CardComponent.vue";
-import Carousel from "/node_modules/vue-carousel/src/Carousel.vue";
-import Slide from "/node_modules/vue-carousel/src/Slide.vue";
 
 export default {
   name: "MainComponent",
   components: {
     CardComponent,
-    Carousel,
-    Slide,
   },
   data() {
     return {
       store,
       maxScrollLeft: 0,
       currentSlide: 0,
+      itemsPerPage: 4,
+      maxScrollLeft2: 0,
+      currentSlide2: 0,
+      itemsPerPage2: 4,
     };
   },
   computed: {
     traslateX() {
       return -this.currentSlide * this.getElementWidth();
     },
+    traslateX2() {
+      return -this.currentSlide2 * this.getElementWidth2();
+    },
   },
-
+  mounted() {
+    const options = {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.5, // Cambia questo valore a seconda di quanto vuoi che l'elemento sia visibile per attivare l'animazione
+    };
+    
+    const observer = new IntersectionObserver(this.handleIntersection, options);
+    observer.observe(this.$refs.animatedText);
+  },
   methods: {
     slide(numslide) {
       const totalElement = this.store.pastries.slice(0, 4).length;
@@ -326,9 +371,40 @@ export default {
         console.log(`if` + this.currentSlide); //3
       }
     },
-
+    slide2(numslide2) {
+      const totalElement2 = this.store.pastries.slice(0, 4).length;
+      const maxSlide2 = totalElement2;
+      if (this.currentSlide2 === 0) {
+        this.currentSlide2 = maxSlide2;
+      }
+      this.currentSlide2 = Math.max(
+        0,
+        Math.min(this.currentSlide2 + numslide2, maxSlide2)
+      );
+      if (this.currentSlide2 === maxSlide2) {
+        this.currentSlide2 = 0;
+      }
+    },
+    updateCurrentPage(newPage) {
+      // Aggiorna il currentPage nel tuo componente genitore
+      this.currentPage = newPage;
+    },
+    handleIntersection(entries) {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          // L'elemento è visibile nella viewport, avvia l'animazione
+          this.$refs.animatedText.classList.add('text-pulse');
+        } else {
+          // L'elemento non è più visibile nella viewport, rimuovi l'animazione
+          this.$refs.animatedText.classList.remove('text-pulse');
+        }
+      });
+    },
     getElementWidth() {
       return 420;
+    },
+    getElementWidth2() {
+      return 430;
     },
   },
 };
@@ -344,6 +420,13 @@ export default {
 .slider-wrapper {
   width: 800px;
   transition: 0.5s;
+}
+.slider-wrapper2 {
+  width: 850px;
+  transition: 0.5s;
+}
+.text-crossed{
+  text-decoration: line-through;
 }
 .image-list {
   transition: 0.5s;
@@ -366,9 +449,19 @@ li {
 .btn-left {
   left: 20px;
 }
-
 .btn-right {
   right: 10px;
+}
+
+.btn-left2 {
+  left: 20px;
+  top: 40%;
+  height: 20%;
+}
+.btn-right2 {
+  right: 10px;
+  top: 40%;
+  height: 20%;
 }
 .corporate-div {
   width: 100%;
@@ -420,43 +513,31 @@ li {
 .weddings-div-hover:hover {
   opacity: 1;
 }
-.slider-container {
-  max-width: 800px;
-  margin: auto;
+.card-container {
+  position: relative;
+  cursor: pointer;
 }
-
-.slider-image {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
+ h3{
+    color: white !important;
+ }
+    .square-purple2{
+    opacity: 0;  
+    position: absolute ;
+    background-color: #56328b57;
+    transition: 0.5s;;
+    top: 0;
+    bottom: 25%;
+    left: 0;
+    right: 0; 
+    z-index: 1;
+    color: white;
+    }
+ .square-purple2:hover{
+    opacity: 1;
+  }
+.hover-underline:hover{
+  text-decoration: underline;
 }
-
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  background: rgba(0, 0, 0, 0.5);
-  padding: 20px;
-  box-sizing: border-box;
-}
-
-.slider-title {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-}
-
-.slider-description {
-  font-size: 1rem;
-  text-align: center;
-}
-
 .bg-row-01 {
   background-image: url(/image/bakery-process-1.jpg);
   background-position: 0% 60%;
@@ -492,8 +573,9 @@ li {
   left: 4.3%;
   right: 2%;
 }
-
-
+.text-purple{
+  color:$colorPurple !important;
+}
 .z-1 {
   top: 0;
   bottom: 0;
@@ -501,13 +583,12 @@ li {
   right: 0;
 }
 .img-newyork {
-  background-image: url(image/new-york-bk-600x397.jpg); 
+  background-image: url(image/new-york-bk-600x397.jpg);
 }
 
 .img-london {
   background-image: url(image/london-bk-600x397.jpg);
 }
-
 
 .img-zoom {
   background-position: center;
@@ -530,36 +611,49 @@ li {
 .img-zoom2:hover {
   background-size: 150%;
 }
-.col-3{
-    height: 400px;
+.col-3 {
+  height: 400px;
 }
-.social-1{
-        background-image: url(image/social-1.jpg);
-    }
+.social-1 {
+  background-image: url(image/social-1.jpg);
+}
 
-    .social-2{
-        background-image: url(image/social-2.jpg);
-    }
-    .social-3{
-        background-image: url(image/social-3.jpg);
-    }
-    .social-4{
-        background-image: url(image/social-4.jpg);
-    }
-    .social-5{
-        background-image: url(image/social-5.jpg);
-    }
-    .social-6{
-        background-image: url(image/social-6.jpg);
-    }
-
-    .bg-section7{
-        background-image: url(image/call-to-action-bg.jpg);
-        background-size:cover;
-        background-position: center;
-        height: 70vh;
-    }
-    .pr-5{
-        padding-right: 60px;
-    }
+.social-2 {
+  background-image: url(image/social-2.jpg);
+}
+.social-3 {
+  background-image: url(image/social-3.jpg);
+}
+.social-4 {
+  background-image: url(image/social-4.jpg);
+}
+.social-5 {
+  background-image: url(image/social-5.jpg);
+}
+.social-6 {
+  background-image: url(image/social-6.jpg);
+}
+.text-pulse{
+  animation: pulse 1s;
+}
+@keyframes pulse{
+  0%{
+    transform: scale(0);
+  }
+  50%{
+    transform: scale(1.2);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+.bg-section7 {
+  background-image: url(image/call-to-action-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 70vh;
+}
+.pr-5 {
+  padding-right: 60px;
+}
 </style>

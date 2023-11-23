@@ -194,3 +194,7 @@ i dettaggli seguenti: numero di tel. , orari di apertura, bottone per la mappa.
 - crea il footer dividendolo in due sezioni 
 - in una sezione c'è un menù come quello della navbar 
 - nell'altra sezione c'è un input per inserire la email e iscriversi
+
+## Milestone 10
+- aggiungi quadtrati in position fixed a lato della pagina
+- aggiungi animazioni
