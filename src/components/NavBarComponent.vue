@@ -29,6 +29,7 @@
           <li class="position-relative">
             <a href="#" class="" @click="openMenu()">Account</a>
 
+            <!-- menu dropdown di account -->
             <div class="bot-boreder-text "></div>
             <div class="position-absolute menu-account" v-if="open">
               <input type="text" class="form-control py-2 my-2" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
@@ -72,8 +73,8 @@ export default {
     },
     handleScroll() {
       const scrollPosition = window.scrollY;
-      this.isFixed = scrollPosition > 100; // Cambia quando inizia il fissaggio
-      this.isTransparent = scrollPosition < 100; // Cambia quando inizia il cambio di colore
+      this.isFixed = scrollPosition > 100; 
+      this.isTransparent = scrollPosition < 100;
 
       this.prevScrollPosition = scrollPosition;
     },

@@ -10,6 +10,7 @@
   <footer>
     <FooterComponent/>
   </footer>
+  <!-- primo cubotto laterale -->
   <div class="cubotto overflow-hidden d-flex"> 
     <div class="d-flex justify-content-center flex-column   align-items-center  align-content-center w-100">
        <i class="fa-solid fa-store fs-3 "></i> 
@@ -18,11 +19,10 @@
     <div class="d-flex justify-content-center flex-column   align-items-center position-absolute hover-cubotto  align-content-center w-100">
       <a href="#" class="text-center"> <i class="fa-solid fa-store fs-3 "></i>
        <span class="">Prebuilds</span>
-      </a>
-      
+      </a> 
     </div>
-       
   </div>
+  <!-- secondo cubotto laterale -->
   <div class="cubotto2 overflow-hidden  d-flex ">
     <div class="d-flex justify-content-center flex-column   align-items-center  align-content-center w-100">
      <h3 class="text-primary fw-bold "> <sup>$</sup>45</h3>
@@ -32,10 +32,10 @@
       <a href="#" class="text-center"> <i class="fa-solid fa-cart-shopping fs-3"></i> <br>
        <span class="">On Sale</span>
       </a>
-     
     </div>
    </div>
 
+   <!-- freccetta per scrollare verso inizio pagina -->
    <div class="scroll-top">
      <button class="btn btn-arrow px-4 py-3" @click="scrollToTop">
       <i class="fa-solid fa-chevron-up"></i>
@@ -114,15 +114,12 @@ export default {
 .cubotto:hover{
   .hover-cubotto{
     transform: translateX(0);
-  }
-  
+  } 
 }
-
 .cubotto2:hover{
   .hover-cubotto{
     transform: translateX(0);
-  }
-  
+  }  
 }
 .btn-arrow{
   background-color: rgba(128, 128, 128, 0.616);

@@ -1,6 +1,9 @@
 <template>
+  <!-- prima section con i prodotti presentati nella slide da 4 elementi -->
   <section id="our-products" class="p-5 m-5">
     <div class="row">
+
+      <!-- colonna di testo -->
       <div class="col-4 py-5">
         <h3 class="subtitle">our products</h3>
         <h1 class="title py-3">
@@ -9,6 +12,8 @@
         </h1>
         <button class="btn btn-purple px-4 py-2">Buy Avada Today!</button>
       </div>
+
+      <!-- colonna slider -->
       <div class="col">
         <div class="container">
           <div class="slider-wrapper d-flex align-items-center overflow-hidden">
@@ -50,6 +55,7 @@
       </div>
     </div>
   </section>
+  <!-- seconda section con eventi speciali -->
   <section id="special-moments" class="p-5 m-5">
     <div class="d-flex flex-column text-center justify-content-center m-3">
       <h3 class="subtitle">corporate & weddings</h3>
@@ -70,6 +76,7 @@
           </div>
         </div>
       </div>
+      <!-- seconda immagine -->
       <div class="col">
         <div class="position-relative">
           <div class="weddings-div"></div>
@@ -84,8 +91,10 @@
       </div>
     </div>
   </section>
+  <!-- terza section con testo e slider di presentazione dei prodotti -->
   <section id="find-products" class="p-5 m-5">
     <div class="row d-flex flex-row  flex-nowrap ">
+      <!-- colonna testo -->
       <div class="col-3">
         <h1 class="title">Find a freshly baked product perfect for you</h1>
         <p class="py-3">
@@ -94,6 +103,8 @@
         </p>
         <button class="btn btn-purple px-4 py-2">Shop All Products</button>
       </div>
+
+      <!-- colonna slider -->
       <div class="col">
         <div class="container ">
           <div class="slider-wrapper2 d-flex align-items-center overflow-hidden">
@@ -146,6 +157,7 @@
       </div>
     </div>
   </section>
+  <!-- quarta section con info sui prodotti , la preparazione e la cucina  -->
   <section id="info" class="px-5">
     <div class="row p-5 position-relative">
       <div class="col bg-row-01"></div>
@@ -223,12 +235,14 @@
       </div>
     </div>
   </section>
+  <!-- quinta section con info su i luoghi | numero di tel. | orari  -->
   <section id="locations" class="p-5 m-5">
     <div class="text-center pb-5">
       <h3 class="subtitle">locations</h3>
       <h1 class="title">Visit our Bakeries</h1>
     </div>
     <div class="row">
+      <!-- colonna negozio di newyork -->
       <div class="col m-0 p-0 overflow-hidden">
         <div class="card border-0 overflow-hidden rounded-0 bg-light-gray">
           <div class="img-newyork img-zoom"></div>
@@ -252,6 +266,7 @@
           </div>
         </div>
       </div>
+      <!-- colonna negozio di londra -->
       <div class="col m-0 p-0 overflow-hidden">
         <div class="card border-0 overflow-hidden rounded-0 my-bg-light-pink">
           <div class="img-london img-zoom"></div>
@@ -277,6 +292,7 @@
       </div>
     </div>
   </section>
+  <!-- sesta section con info sui contatti e account instagram -->
   <section id="contacts" class="p-5 m-5">
     <div class="row py-4 gap-3 d-flex flex-nowrap pr-5">
       <div class="col-3 overflow-hidden social-1 img-zoom2"></div>
@@ -298,6 +314,7 @@
       <div class="col-3 overflow-hidden social-6 img-zoom2"></div>
     </div>
   </section>
+  <!-- settima section con la call-to-action e il bottone per andare allo shop -->
   <section id="shop" class="bg-section7">
     <div class="mx-5 d-flex flex-column justify-content-center h-100">
       <h3 class="subtitle text-light px-5">TRY OUR SEASONAL PRODUCTS</h3>
@@ -332,6 +349,7 @@ export default {
     };
   },
   computed: {
+    // traslano gli slider
     traslateX() {
       return -this.currentSlide * this.getElementWidth();
     },
@@ -340,10 +358,11 @@ export default {
     },
   },
   mounted() {
+    // anima il testo nella sesta section
     const options = {
       root: null,
       rootMargin: '0px',
-      threshold: 0.5, // Cambia questo valore a seconda di quanto vuoi che l'elemento sia visibile per attivare l'animazione
+      threshold: 0.5, 
     };
     
     const observer = new IntersectionObserver(this.handleIntersection, options);
